@@ -1,0 +1,7 @@
+Cause,Effect,F_stat,p_value,Significant
+price_change,LRR_Oracle_Sen,0.1496,0.8611,
+price_change,omega,0.8424,0.4316,
+LRR_Oracle_Sen,price_change,0.1761,0.8387,
+LRR_Oracle_Sen,omega,4.5244,0.0115,*
+omega,price_change,4.0501,0.0183,*
+omega,LRR_Oracle_Sen,1.866,0.1563,

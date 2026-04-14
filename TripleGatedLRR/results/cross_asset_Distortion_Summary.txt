@@ -1,0 +1,44 @@
+=== Cross-Asset Cognitive Distortion Decomposition ===
+T3.1 — Which distortions drive the LRR↔ω feedback?
+
+--- Distortions Significantly Predicted by LRR (LRR→Distortion) ---
+Distortion             Cluster                   N_assets Assets
+---------------------------------------------------------------------------
+dichotoreasoning       Herd_Cognitive_Bias              6  BTC, ETH, DOGE, LTC, SOL, XRP
+labeling               Overconfidence_Ego               6  BTC, ETH, DOGE, LTC, SOL, XRP
+magnification          Overconfidence_Ego               6  BTC, ETH, DOGE, LTC, SOL, XRP
+mindreading            Herd_Cognitive_Bias              6  BTC, ETH, DOGE, LTC, SOL, XRP
+overgeneralizing       Herd_Cognitive_Bias              6  BTC, ETH, DOGE, LTC, SOL, XRP
+shouldment             Overconfidence_Ego               6  BTC, ETH, DOGE, LTC, SOL, XRP
+
+--- Cluster-Level Results Per Asset ---
+
+BTC:
+  Fear_Catastrophising     : LRR→Cl p=0.6942  Cl→LRR p=0.1049
+  Overconfidence_Ego       : LRR→Cl p=0.0000***  Cl→LRR p=0.0000***
+  Herd_Cognitive_Bias      : LRR→Cl p=0.0000***  Cl→LRR p=0.0000***
+
+DOGE:
+  Fear_Catastrophising     : LRR→Cl p=0.6941  Cl→LRR p=0.0994
+  Overconfidence_Ego       : LRR→Cl p=0.0000***  Cl→LRR p=0.0000***
+  Herd_Cognitive_Bias      : LRR→Cl p=0.0000***  Cl→LRR p=0.0000***
+
+ETH:
+  Fear_Catastrophising     : LRR→Cl p=0.6939  Cl→LRR p=0.1028
+  Overconfidence_Ego       : LRR→Cl p=0.0000***  Cl→LRR p=0.0000***
+  Herd_Cognitive_Bias      : LRR→Cl p=0.0000***  Cl→LRR p=0.0000***
+
+LTC:
+  Fear_Catastrophising     : LRR→Cl p=0.6988  Cl→LRR p=0.1002
+  Overconfidence_Ego       : LRR→Cl p=0.0000***  Cl→LRR p=0.0000***
+  Herd_Cognitive_Bias      : LRR→Cl p=0.0000***  Cl→LRR p=0.0000***
+
+SOL:
+  Fear_Catastrophising     : LRR→Cl p=0.6860  Cl→LRR p=0.0990
+  Overconfidence_Ego       : LRR→Cl p=0.0000***  Cl→LRR p=0.0000***
+  Herd_Cognitive_Bias      : LRR→Cl p=0.0000***  Cl→LRR p=0.0000***
+
+XRP:
+  Fear_Catastrophising     : LRR→Cl p=0.6913  Cl→LRR p=0.1004
+  Overconfidence_Ego       : LRR→Cl p=0.0000***  Cl→LRR p=0.0000***
+  Herd_Cognitive_Bias      : LRR→Cl p=0.0000***  Cl→LRR p=0.0000***

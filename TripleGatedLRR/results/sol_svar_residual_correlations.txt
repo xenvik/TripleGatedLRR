@@ -1,0 +1,15 @@
+=== SOL SVAR Residual Correlation Matrix ===
+Justifies Cholesky ordering: LRR → whale_vol → price
+
+Contemporaneous residual correlations (reduced-form VAR):
+
+                price_change  LRR_Oracle_Sen   omega
+price_change          1.0000         -0.0494 -0.0534
+LRR_Oracle_Sen       -0.0494          1.0000  0.5281
+omega                -0.0534          0.5281  1.0000
+
+--- Ordering Justification ---
+r(LRR_Oracle_S, price_change): -0.0494  [LOW — ordering robust]
+
+Conclusion: if |r(LRR, price)| < 0.15, the contemporaneous
+correlation is low enough that Cholesky ordering is innocuous.

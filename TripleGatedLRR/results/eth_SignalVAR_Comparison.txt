@@ -1,0 +1,14 @@
+=== ETH Signal↔omega Granger Comparison ===
+All four signals tested in identical VAR(omega, signal, price)
+
+Signal            Sig→ω F        p   Sig   ω→Sig F        p   Sig
+----------------------------------------------------------
+LRR Oracle         12.138   0.0000   ***    20.016   0.0000   ***
+HITS                6.353   0.0003   ***     4.208   0.0056    **
+PageRank            4.915   0.0000   ***    14.220   0.0000   ***
+Simple              4.668   0.0000   ***    14.020   0.0000   ***
+
+--- Interpretation ---
+RESULT: BOTH LRR and HITS show omega Granger causality.
+The dynamic may be partially driven by network structure.
+Compare F-statistics: if LRR F > HITS F, LRR is the stronger driver.

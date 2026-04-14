@@ -1,0 +1,13 @@
+=== SOL Quantile Regression ===
+Tests whether each signal reduces extreme losses
+
+
+--- q=0.1 (10th percentile) ---
+LRR_Oracle_Sen: coef=-0.365853  p=0.8180  n.s.
+HITS_Sen: coef=0.047622  p=0.5800  n.s.
+PageRank_Sen: coef=0.173683  p=0.1702  n.s.
+
+--- q=0.2 (20th percentile) ---
+LRR_Oracle_Sen: coef=-0.754011  p=0.2817  n.s.
+HITS_Sen: coef=0.012471  p=0.7881  n.s.
+PageRank_Sen: coef=0.096111  p=0.1465  n.s.

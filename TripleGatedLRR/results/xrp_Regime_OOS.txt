@@ -1,0 +1,9 @@
+=== XRP Regime-Conditioned OOS Validation ===
+Model trained on full training set (no regime split in training)
+Test set evaluated separately per HMM-detected regime
+
+Regime         N   LRR_RMSE   LRR_DA   AR1_DA  LRR>AR?
+-------------------------------------------------------
+CALM         108   0.027997   0.5000   0.4722      YES
+CRISIS        13   0.091473   0.5385   0.5385       no
+FULL         121   0.039982   0.5041   0.4793      YES

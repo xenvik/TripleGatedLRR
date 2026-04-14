@@ -1,0 +1,114 @@
+=== Phase 20: Sensitivity & Robustness Suite Summary ===
+=== v2.2 — anchor fixes + channel robustness ===
+
+Data: 76 curated channels, 61,297 graph nodes, 350,800 tweets
+
+--- 20a. Con=0 Fraction ---
+  ALL: 68.7% zero, 68.7% near-zero
+  BTC_bull: 68.8% zero, 68.8% near-zero
+  BTC_bear: 66.9% zero, 66.9% near-zero
+
+--- 20b. Gate Ablation (Granger F-stats) ---
+  BTC/Full_Oracle: F=12.15 p=0.0 crashes=7
+  BTC/No_Omega: F=12.071 p=0.0 crashes=7
+  BTC/No_Con: F=9.287 p=0.0 crashes=8
+  BTC/No_VAnchor: F=12.077 p=0.0 crashes=7
+  BTC/Omega_Only: F=9.383 p=0.0 crashes=8
+  BTC/Con_Only: F=11.995 p=0.0 crashes=7
+  BTC/Social_Only: F=9.612 p=0.0 crashes=9
+  ETH/Full_Oracle: F=12.193 p=0.0 crashes=7
+  ETH/No_Omega: F=12.096 p=0.0 crashes=7
+  ETH/No_Con: F=9.732 p=0.0 crashes=10
+  ETH/No_VAnchor: F=12.137 p=0.0 crashes=7
+  ETH/Omega_Only: F=9.836 p=0.0 crashes=10
+  ETH/Con_Only: F=12.031 p=0.0 crashes=7
+  ETH/Social_Only: F=10.047 p=0.0 crashes=11
+  DOGE/Full_Oracle: F=13.821 p=0.0 crashes=7
+  DOGE/No_Omega: F=14.023 p=0.0 crashes=7
+  DOGE/No_Con: F=9.984 p=0.0 crashes=8
+  DOGE/No_VAnchor: F=13.666 p=0.0 crashes=7
+  DOGE/Omega_Only: F=10.119 p=0.0 crashes=8
+  DOGE/Con_Only: F=13.937 p=0.0 crashes=7
+  DOGE/Social_Only: F=10.327 p=0.0 crashes=9
+  LTC/Full_Oracle: F=12.343 p=0.0 crashes=6
+  LTC/No_Omega: F=12.269 p=0.0 crashes=6
+  LTC/No_Con: F=9.651 p=0.0 crashes=7
+  LTC/No_VAnchor: F=12.272 p=0.0 crashes=6
+  LTC/Omega_Only: F=9.766 p=0.0 crashes=7
+  LTC/Con_Only: F=12.185 p=0.0 crashes=6
+  LTC/Social_Only: F=9.97 p=0.0 crashes=8
+  SOL/Full_Oracle: F=12.204 p=0.0 crashes=5
+  SOL/No_Omega: F=12.134 p=0.0 crashes=6
+  SOL/No_Con: F=10.524 p=0.0 crashes=11
+  SOL/No_VAnchor: F=12.169 p=0.0 crashes=5
+  SOL/Omega_Only: F=10.219 p=0.0 crashes=11
+  SOL/Con_Only: F=12.089 p=0.0 crashes=6
+  SOL/Social_Only: F=10.413 p=0.0 crashes=12
+  XRP/Full_Oracle: F=12.373 p=0.0 crashes=5
+  XRP/No_Omega: F=12.295 p=0.0 crashes=5
+  XRP/No_Con: F=9.952 p=0.0 crashes=12
+  XRP/No_VAnchor: F=12.301 p=0.0 crashes=5
+  XRP/Omega_Only: F=10.089 p=0.0 crashes=12
+  XRP/Con_Only: F=12.215 p=0.0 crashes=5
+  XRP/Social_Only: F=10.28 p=0.0 crashes=13
+
+--- 20c. Con Sensitivity ---
+  Con_Agg_Only: F=12.15 p=0.0 crashes=7
+  Con_Both: F=12.023 p=0.0 crashes=7
+  Con_Prop_Only: F=8.814 p=0.0 crashes=8
+  Con_With_Denom: F=6.77 p=0.0012 crashes=7
+  No_Con: F=9.287 p=0.0 crashes=8
+
+--- 20d. Hyperparameter Sweep ---
+  45 combinations tested
+  Significant at p<0.05: 45/45
+  F-stat range: 12.090 - 12.310
+
+--- 20e. Rolling Reputation ---
+  BTC: F=nan p=nan (n_merged=579)
+  ETH: F=nan p=nan (n_merged=579)
+  DOGE: F=nan p=nan (n_merged=579)
+  LTC: F=nan p=nan (n_merged=579)
+  SOL: F=nan p=nan (n_merged=579)
+  XRP: F=nan p=nan (n_merged=579)
+
+--- 20f. HMM Robustness ---
+  BTC [winsorised_1_99]: concordance=1.0
+  BTC [winsorised_5_95]: concordance=1.0
+  BTC [winsorised_10_90]: concordance=1.0
+  ETH [winsorised_1_99]: concordance=1.0
+  ETH [winsorised_5_95]: concordance=1.0
+  ETH [winsorised_10_90]: concordance=1.0
+  DOGE [winsorised_1_99]: concordance=1.0
+  DOGE [winsorised_5_95]: concordance=1.0
+  DOGE [winsorised_10_90]: concordance=1.0
+  LTC [winsorised_1_99]: concordance=1.0
+  LTC [winsorised_5_95]: concordance=1.0
+  LTC [winsorised_10_90]: concordance=1.0
+  SOL [winsorised_1_99]: concordance=1.0
+  SOL [winsorised_5_95]: concordance=1.0
+  SOL [winsorised_10_90]: concordance=1.0
+  XRP [winsorised_1_99]: concordance=1.0
+  XRP [winsorised_5_95]: concordance=1.0
+  XRP [winsorised_10_90]: concordance=1.0
+
+--- 20g. Channel Robustness ---
+  Channels: 76
+  Tweet Gini: 0.6163
+  Top-5 channel share: 38.1%
+  LOO: 75/76 still significant after dropping any channel
+  LOO F-stat range: 0.953 - 61.566
+
+--- 20h. Alternative Independence ---
+  daily_deviation/BTC: F=6.127 p=0.0004 crashes=5
+  daily_deviation/ETH: F=6.511 p=0.0002 crashes=5
+  daily_deviation/DOGE: F=6.791 p=0.0001 crashes=8
+  daily_deviation/LTC: F=6.446 p=0.0002 crashes=5
+  daily_deviation/SOL: F=6.903 p=0.0001 crashes=9
+  daily_deviation/XRP: F=6.551 p=0.0002 crashes=7
+  temporal_novelty/BTC: F=20.434 p=0.0 crashes=5
+  temporal_novelty/ETH: F=20.839 p=0.0 crashes=7
+  temporal_novelty/DOGE: F=20.65 p=0.0 crashes=6
+  temporal_novelty/LTC: F=21.328 p=0.0 crashes=6
+  temporal_novelty/SOL: F=20.953 p=0.0 crashes=6
+  temporal_novelty/XRP: F=21.405 p=0.0 crashes=6

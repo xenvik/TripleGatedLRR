@@ -1,0 +1,8 @@
+=== LTC Diebold-Mariano Test ===
+H0: AR(1) and LRR-VAR have equal predictive accuracy
+
+dm_statistic: -0.7437603373268966
+dm_pvalue: 0.457021479231317
+ar1_mse: 0.0017922809478803227
+var_mse: 0.001793758380258475
+significant: False

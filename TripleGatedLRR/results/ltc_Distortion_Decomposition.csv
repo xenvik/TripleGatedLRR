@@ -1,0 +1,15 @@
+distortion,cluster,LRR_to_dist_F,LRR_to_dist_p,LRR_to_dist_sig,dist_to_LRR_F,dist_to_LRR_p,dist_to_LRR_sig,lrr_correlation
+dichotoreasoning,Herd_Cognitive_Bias,44.4787,0.0,***,9.1715,0.0,***,-0.1426
+labeling,Overconfidence_Ego,12.6992,0.0,***,1.2619,0.2831,,0.0134
+magnification,Overconfidence_Ego,6.8053,0.0,***,6.7607,0.0,***,-0.0826
+mindreading,Herd_Cognitive_Bias,25.1575,0.0,***,3.8707,0.0494,*,0.0069
+overgeneralizing,Herd_Cognitive_Bias,9.0328,0.0,***,43.0009,0.0,***,-0.1262
+shouldment,Overconfidence_Ego,7.959,0.0,***,54.8295,0.0,***,-0.0421
+negativereasoning,Fear_Catastrophising,0.6561,0.6226,,2.0059,0.0915,,-0.0985
+catastrophizing,Other,,,,,,,
+emotionreasoning,Other,,,,,,,
+fortunetelling,Other,,,,,,,
+mentalfiltering,Other,,,,,,,
+personalizing,Other,,,,,,,
+mentalfilteringplus,Other,,,,,,,
+disqualpositive,Other,,,,,,,

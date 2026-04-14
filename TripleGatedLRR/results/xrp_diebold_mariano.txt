@@ -1,0 +1,8 @@
+=== XRP Diebold-Mariano Test ===
+H0: AR(1) and LRR-VAR have equal predictive accuracy
+
+dm_statistic: 0.9770575967660584
+dm_pvalue: 0.32854063873110695
+ar1_mse: 0.001600605324590151
+var_mse: 0.001598565664146425
+significant: False

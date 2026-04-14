@@ -1,0 +1,15 @@
+=== ETH Con Gate Ablation ===
+
+--- Full Population ---
+Full Oracle LTD  (Ω + Con): 0.114754
+Ablated LTD      (Ω only):  0.163934
+Risk Reduction:             30.00%
+Bootstrap 95% CI:           [-21.97%, 75.00%]
+Bootstrap p-value:          0.1024
+
+--- Elite Users (Top 19%) ---
+Elite Full LTD:   0.067797
+Elite Ablated LTD:0.118644
+Elite Reduction:  42.86%
+Elite 95% CI:     [-65.00%, 75.82%]
+Elite p-value:    0.2233

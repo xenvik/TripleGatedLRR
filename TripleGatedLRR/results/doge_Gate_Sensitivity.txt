@@ -1,0 +1,15 @@
+=== DOGE Con Gate Ablation ===
+
+--- Full Population ---
+Full Oracle LTD  (Ω + Con): 0.114754
+Ablated LTD      (Ω only):  0.131148
+Risk Reduction:             12.50%
+Bootstrap 95% CI:           [-50.00%, 69.68%]
+Bootstrap p-value:          0.2300
+
+--- Elite Users (Top 19%) ---
+Elite Full LTD:   0.135593
+Elite Ablated LTD:0.118644
+Elite Reduction:  -14.29%
+Elite 95% CI:     [-166.67%, 58.48%]
+Elite p-value:    0.5417

@@ -1,0 +1,5 @@
+=== XRP VECM Analysis (all signals) ===
+
+LRR: rank=3 F=9.400 p=0.0000 ***
+HITS: rank=3 F=6.234 p=0.0003 ***
+PR: rank=3 F=9.203 p=0.0000 ***

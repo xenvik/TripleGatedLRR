@@ -1,0 +1,17 @@
+=== SOL Out-of-Sample Validation ===
+Train obs: 483   Test obs: 121
+
+                RMSE       MAE        DA
+Model                                   
+RandomWalk  0.078433  0.046729  0.000000
+AR(1)       0.078434  0.046942  0.438017
+LRR-VAR     0.078437  0.046915  0.438017
+
+--- Interpretation ---
+DA > 0.50 = better than random direction prediction
+LRR-VAR vs Random Walk: improvement = benchmark gap
+
+--- Directional Accuracy Bootstrap Test ---
+Observed DA:   0.4380
+95% CI:        [0.3552, 0.5289]
+p-value (H0: DA <= 0.50): 0.9210

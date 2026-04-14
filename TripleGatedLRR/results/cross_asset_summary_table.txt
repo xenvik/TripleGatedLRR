@@ -1,0 +1,14 @@
+=== Cross-Asset Summary Table ===
+LRR Framework — 6-Asset Validation
+
+Asset  LRR_LTD  PR_LTD  LTD_Improvement%  LRR->omega_p  omega->LRR_p  Con_Reduction%  Con_Boot_p  Roll_Pct_Positive  Roll_Mean_r  LRR_OOS_DA  AR1_OOS_DA
+  BTC   0.1148  0.1311              12.5           0.0           0.0            22.2       0.184               60.5       0.0400      0.5124      0.5041
+ DOGE   0.1148  0.1311              12.5           0.0           0.0            12.5       0.230               75.1       0.0634      0.5372      0.5372
+  ETH   0.1148  0.1639              30.0           0.0           0.0            30.0       0.102               58.2       0.0273      0.4959      0.4959
+  LTC   0.0984  0.1311              25.0           0.0           0.0            25.0       0.361               67.2       0.0468      0.4545      0.4545
+  SOL   0.0820  0.1803              54.5           0.0           0.0            54.5       0.021               74.9       0.0506      0.4380      0.4380
+  XRP   0.0820  0.1967              58.3           0.0           0.0            58.3       0.015               59.1       0.0405      0.5041      0.4793
+
+--- Consistency Summary ---
+LRR achieves lower LTD than PageRank: 6/6 assets
+LRR->omega Granger p<0.001: 6/6 assets

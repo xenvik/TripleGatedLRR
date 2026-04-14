@@ -1,0 +1,17 @@
+=== XRP Out-of-Sample Validation ===
+Train obs: 483   Test obs: 121
+
+                RMSE       MAE        DA
+Model                                   
+RandomWalk  0.040007  0.026747  0.000000
+AR(1)       0.040008  0.026754  0.479339
+LRR-VAR     0.039982  0.026734  0.504132
+
+--- Interpretation ---
+DA > 0.50 = better than random direction prediction
+LRR-VAR vs Random Walk: improvement = benchmark gap
+
+--- Directional Accuracy Bootstrap Test ---
+Observed DA:   0.5041
+95% CI:        [0.4132, 0.5950]
+p-value (H0: DA <= 0.50): 0.4490

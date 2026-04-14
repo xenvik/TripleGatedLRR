@@ -1,0 +1,30 @@
+=== Leave-One-Out Channel Robustness: ALL Signals x ALL Assets ===
+
+Asset    LRR            PageRank       HITS          
+-------------------------------------------------------
+BTC      75/76 (98.7%)  76/76 (100.0%)  72/76 (94.7%)
+ETH      75/76 (98.7%)  76/76 (100.0%)  73/76 (96.1%)
+DOGE     75/76 (98.7%)  76/76 (100.0%)  73/76 (96.1%)
+LTC      75/76 (98.7%)  76/76 (100.0%)  73/76 (96.1%)
+SOL      75/76 (98.7%)  76/76 (100.0%)  72/76 (94.7%)
+XRP      75/76 (98.7%)  76/76 (100.0%)  72/76 (94.7%)
+
+TOTAL    450/456 (98.7%)  456/456 (100.0%)  435/456 (95.4%)
+
+
+--- Channels breaking HITS across assets ---
+  @SatoshiLite: breaks HITS in 6 asset(s): BTC, ETH, DOGE, LTC, SOL, XRP
+  @brian_armstrong: breaks HITS in 6 asset(s): BTC, ETH, DOGE, LTC, SOL, XRP
+  @adam3us: breaks HITS in 4 asset(s): BTC, LTC, SOL, XRP
+  @ethhub_io: breaks HITS in 4 asset(s): ETH, DOGE, SOL, XRP
+  @ethereum: breaks HITS in 1 asset(s): BTC
+
+--- Channels breaking LRR across assets ---
+  @SatoshiLite: breaks LRR in 6 asset(s): BTC, ETH, DOGE, LTC, SOL, XRP
+
+--- Interpretation ---
+LRR: 98.7% robust across all assets
+HITS: 95.4% robust across all assets
+PageRank: 100.0% robust (trivially: Gini=0.003)
+
+LRR is more robust than HITS by 15 channel-asset combinations.

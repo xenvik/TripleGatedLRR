@@ -1,0 +1,15 @@
+=== BTC Con Gate Ablation ===
+
+--- Full Population ---
+Full Oracle LTD  (Ω + Con): 0.114754
+Ablated LTD      (Ω only):  0.147541
+Risk Reduction:             22.22%
+Bootstrap 95% CI:           [-40.00%, 72.34%]
+Bootstrap p-value:          0.1837
+
+--- Elite Users (Top 19%) ---
+Elite Full LTD:   0.135593
+Elite Ablated LTD:0.101695
+Elite Reduction:  -33.33%
+Elite 95% CI:     [-205.08%, 60.45%]
+Elite p-value:    0.6437

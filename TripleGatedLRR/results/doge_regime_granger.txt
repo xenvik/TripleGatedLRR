@@ -1,0 +1,4 @@
+=== DOGE Regime-Specific Granger Causality ===
+
+CALM (n=479): F=26.708  p=0.0000  ***
+CRISIS (n=122): F=0.479  p=0.4895  n.s.

@@ -1,0 +1,4 @@
+=== BTC Regime-Specific Granger Causality ===
+
+CALM (n=586): F=4.206  p=0.0057  **
+CRISIS (n=15): insufficient data

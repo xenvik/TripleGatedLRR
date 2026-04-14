@@ -1,0 +1,17 @@
+=== BTC Out-of-Sample Validation ===
+Train obs: 483   Test obs: 121
+
+                RMSE       MAE        DA
+Model                                   
+RandomWalk  0.026946  0.016547  0.000000
+AR(1)       0.026979  0.016550  0.504132
+LRR-VAR     0.026984  0.016541  0.512397
+
+--- Interpretation ---
+DA > 0.50 = better than random direction prediction
+LRR-VAR vs Random Walk: improvement = benchmark gap
+
+--- Directional Accuracy Bootstrap Test ---
+Observed DA:   0.5124
+95% CI:        [0.4298, 0.6033]
+p-value (H0: DA <= 0.50): 0.3890

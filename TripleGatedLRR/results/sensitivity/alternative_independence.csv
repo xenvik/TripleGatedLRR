@@ -1,0 +1,13 @@
+independence_measure,asset,granger_F,granger_p,joint_crashes
+daily_deviation,BTC,6.127,0.0004,5
+daily_deviation,ETH,6.511,0.0002,5
+daily_deviation,DOGE,6.791,0.0001,8
+daily_deviation,LTC,6.446,0.0002,5
+daily_deviation,SOL,6.903,0.0001,9
+daily_deviation,XRP,6.551,0.0002,7
+temporal_novelty,BTC,20.434,0.0,5
+temporal_novelty,ETH,20.839,0.0,7
+temporal_novelty,DOGE,20.65,0.0,6
+temporal_novelty,LTC,21.328,0.0,6
+temporal_novelty,SOL,20.953,0.0,6
+temporal_novelty,XRP,21.405,0.0,6

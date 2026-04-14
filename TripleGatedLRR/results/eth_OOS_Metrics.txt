@@ -1,0 +1,17 @@
+=== ETH Out-of-Sample Validation ===
+Train obs: 483   Test obs: 121
+
+                RMSE       MAE        DA
+Model                                   
+RandomWalk  0.038722  0.024403  0.000000
+AR(1)       0.038752  0.024414  0.495868
+LRR-VAR     0.038762  0.024419  0.495868
+
+--- Interpretation ---
+DA > 0.50 = better than random direction prediction
+LRR-VAR vs Random Walk: improvement = benchmark gap
+
+--- Directional Accuracy Bootstrap Test ---
+Observed DA:   0.4959
+95% CI:        [0.4050, 0.5950]
+p-value (H0: DA <= 0.50): 0.5410

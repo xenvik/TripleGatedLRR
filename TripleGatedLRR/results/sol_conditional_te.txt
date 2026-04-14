@@ -1,0 +1,13 @@
+=== SOL Conditional Transfer Entropy ===
+
+Standard TE:
+  TE(LRR→omega) = 0.033614
+  TE(HITS→omega) = 0.050174
+  TE(PR→omega) = 0.061971
+
+Conditional TE (unique information):
+  TE(LRR→omega | HITS) = 0.026253  (LRR info beyond HITS)
+  TE(LRR→omega | PR) = 0.019829  (LRR info beyond PR)
+  TE(HITS→omega | LRR) = 0.044319  (HITS info beyond LRR)
+
+HITS carries more unique information about omega than LRR.

@@ -1,0 +1,27 @@
+=== LTC Forecast Error Variance Decomposition ===
+Horizons: 1, 3, 5, 10 days
+
+
+Variance of price_change explained by:
+ Horizon       price_change    LRR_Oracle_Sen             omega
+--------------------------------------------------------------
+       1            100.00%             0.00%             0.00%
+       3             99.49%             0.08%             0.43%
+       5             99.45%             0.12%             0.43%
+      10             99.44%             0.12%             0.44%
+
+Variance of LRR_Oracle_Sen explained by:
+ Horizon       price_change    LRR_Oracle_Sen             omega
+--------------------------------------------------------------
+       1              0.07%            99.93%             0.00%
+       3              0.93%            93.76%             5.31%
+       5              0.95%            93.73%             5.32%
+      10              0.95%            93.70%             5.35%
+
+Variance of omega explained by:
+ Horizon       price_change    LRR_Oracle_Sen             omega
+--------------------------------------------------------------
+       1              0.05%            27.42%            72.53%
+       3              0.14%            28.44%            71.42%
+       5              0.17%            28.35%            71.48%
+      10              0.17%            28.36%            71.48%

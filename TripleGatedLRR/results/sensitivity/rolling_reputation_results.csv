@@ -1,0 +1,7 @@
+asset,method,granger_F,granger_p,n_windows,n_merged
+BTC,expanding_30d,,,579,579
+ETH,expanding_30d,,,579,579
+DOGE,expanding_30d,,,579,579
+LTC,expanding_30d,,,579,579
+SOL,expanding_30d,,,579,579
+XRP,expanding_30d,,,579,579

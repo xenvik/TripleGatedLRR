@@ -1,0 +1,4 @@
+asset,period,n,LRR_to_omega_p,LRR_to_omega_sig,omega_to_LRR_p,omega_to_LRR_sig,LRR_LTD,PR_LTD
+BTC,Bull,158,,,,,0.1875,0.1875
+BTC,Bear,446,0.4438,n.s.,0.0229,*,0.0667,0.1556
+BTC,Full,604,0.0,***,0.0,***,0.1148,0.1311

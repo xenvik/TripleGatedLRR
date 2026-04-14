@@ -1,0 +1,14 @@
+=== BTC Signal↔omega Granger Comparison ===
+All four signals tested in identical VAR(omega, signal, price)
+
+Signal            Sig→ω F        p   Sig   ω→Sig F        p   Sig
+----------------------------------------------------------
+LRR Oracle         12.093   0.0000   ***    20.398   0.0000   ***
+HITS                5.953   0.0005   ***     4.460   0.0040    **
+PageRank            4.845   0.0000   ***    13.374   0.0000   ***
+Simple              4.580   0.0000   ***    13.242   0.0000   ***
+
+--- Interpretation ---
+RESULT: BOTH LRR and HITS show omega Granger causality.
+The dynamic may be partially driven by network structure.
+Compare F-statistics: if LRR F > HITS F, LRR is the stronger driver.

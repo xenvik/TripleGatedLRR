@@ -1,0 +1,21 @@
+=== ETH Portfolio Backtest ===
+Strategy: Long/Cash | Signal threshold: 20-day rolling median
+Transaction cost: 0.1% per round-trip | Annualisation: 365 days
+
+Strategy              TotalRet%   AnnRet%   Sharpe   Sortino   MaxDD%   Calmar  WinRate%     SR_p
+-----------------------------------------------------------------------------------------------
+Buy-and-Hold              -34.6     -22.6    0.119     0.166    -79.4   -0.285      51.2  0.438
+Simple_Sen                 -6.4      -3.9    0.210     0.237    -72.3   -0.054      37.1  0.376
+FinBERT_Sen                 3.3       2.0    0.311     0.363    -68.7    0.029      36.8  0.325
+PageRank_Sen              -23.5     -14.9   -0.002    -0.002    -73.7   -0.203      36.0  0.499
+HITS_Sen                  -61.3     -43.7   -0.709    -0.737    -81.0   -0.539      33.8  0.812
+LRR_Social_Sen            -16.6     -10.4    0.087     0.095    -72.9   -0.142      36.8  0.457
+LRR_Oracle_Sen            -30.9     -20.0   -0.142    -0.167    -71.9   -0.278      34.1  0.560
+
+--- Regime-Conditioned Sharpe (LRR_Oracle_Sen, Long/Cash) ---
+  Full      : Sharpe=-0.142  DA=34.1%  p=0.560
+  CALM      : Sharpe=1.972  DA=35.1%  p=0.029*
+  CRISIS    : Sharpe=-1.750  DA=32.8%  p=0.933
+
+--- Long/Short Variant (LRR_Oracle_Sen) ---
+  Full sample: Sharpe=-0.301  Ann=-45.5%  MaxDD=-82.8%  p=0.654

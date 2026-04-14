@@ -1,0 +1,6 @@
+config,granger_F,granger_p,joint_crashes
+Con_Agg_Only,12.15,0.0,7
+Con_Both,12.023,0.0,7
+Con_Prop_Only,8.814,0.0,8
+Con_With_Denom,6.77,0.0012,7
+No_Con,9.287,0.0,8

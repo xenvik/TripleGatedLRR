@@ -1,0 +1,30 @@
+=== ETH Event Study ===
+Events identified: 17  Valid windows: 16
+Window: [-5, +10] days around peak social activity
+
+--- LRR Lead-Price Test ---
+Mean LRR lead over price: -2.88 days (std=4.79)
+t-statistic: -2.4023
+p-value (H0: lead<=0): 0.9852 
+% events where LRR peaks before price: 25.0%
+
+Interpretation: No significant systematic LRR lead detected
+
+--- Event Dates Identified ---
+  2021-06-18: score=12.525  vol=5  sen_shift=0.4963
+  2021-06-08: score=9.273  vol=1  sen_shift=0.3467
+  2021-06-30: score=6.800  vol=13  sen_shift=0.2358
+  2021-07-18: score=3.629  vol=249  sen_shift=0.1356
+  2021-09-18: score=2.936  vol=278  sen_shift=0.1094
+  2021-09-05: score=2.782  vol=204  sen_shift=0.0883
+  2022-11-10: score=2.617  vol=1096  sen_shift=0.0108
+  2021-08-07: score=2.484  vol=342  sen_shift=0.1009
+  2022-11-30: score=2.472  vol=1064  sen_shift=0.0113
+  2021-08-17: score=2.420  vol=142  sen_shift=0.0049
+  2022-06-13: score=2.379  vol=1025  sen_shift=0.0567
+  2022-05-04: score=2.377  vol=1073  sen_shift=0.0174
+  2022-02-01: score=2.355  vol=980  sen_shift=0.0008
+  2022-06-29: score=2.199  vol=962  sen_shift=0.0044
+  2022-09-15: score=2.190  vol=951  sen_shift=0.0028
+  2022-03-09: score=2.171  vol=950  sen_shift=0.0035
+  2022-05-16: score=2.157  vol=895  sen_shift=0.0712

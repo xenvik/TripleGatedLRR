@@ -1,0 +1,14 @@
+=== SOL Signal↔omega Granger Comparison ===
+All four signals tested in identical VAR(omega, signal, price)
+
+Signal            Sig→ω F        p   Sig   ω→Sig F        p   Sig
+----------------------------------------------------------
+LRR Oracle         12.156   0.0000   ***    20.527   0.0000   ***
+HITS                6.649   0.0002   ***     4.350   0.0046    **
+PageRank            4.555   0.0000   ***    13.838   0.0000   ***
+Simple              4.307   0.0001   ***    13.698   0.0000   ***
+
+--- Interpretation ---
+RESULT: BOTH LRR and HITS show omega Granger causality.
+The dynamic may be partially driven by network structure.
+Compare F-statistics: if LRR F > HITS F, LRR is the stronger driver.

@@ -1,0 +1,14 @@
+=== LTC Signal↔omega Granger Comparison ===
+All four signals tested in identical VAR(omega, signal, price)
+
+Signal            Sig→ω F        p   Sig   ω→Sig F        p   Sig
+----------------------------------------------------------
+LRR Oracle         12.286   0.0000   ***    20.511   0.0000   ***
+HITS                6.310   0.0003   ***     4.381   0.0044    **
+PageRank            5.010   0.0000   ***    14.102   0.0000   ***
+Simple              8.406   0.0000   ***     1.107   0.3449  n.s.
+
+--- Interpretation ---
+RESULT: BOTH LRR and HITS show omega Granger causality.
+The dynamic may be partially driven by network structure.
+Compare F-statistics: if LRR F > HITS F, LRR is the stronger driver.

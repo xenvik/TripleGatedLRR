@@ -1,0 +1,17 @@
+=== LTC Out-of-Sample Validation ===
+Train obs: 483   Test obs: 121
+
+                RMSE       MAE        DA
+Model                                   
+RandomWalk  0.042148  0.027722  0.000000
+AR(1)       0.042335  0.027844  0.454545
+LRR-VAR     0.042353  0.027851  0.454545
+
+--- Interpretation ---
+DA > 0.50 = better than random direction prediction
+LRR-VAR vs Random Walk: improvement = benchmark gap
+
+--- Directional Accuracy Bootstrap Test ---
+Observed DA:   0.4545
+95% CI:        [0.3636, 0.5455]
+p-value (H0: DA <= 0.50): 0.8370

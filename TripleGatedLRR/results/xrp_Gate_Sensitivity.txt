@@ -1,0 +1,15 @@
+=== XRP Con Gate Ablation ===
+
+--- Full Population ---
+Full Oracle LTD  (Ω + Con): 0.081967
+Ablated LTD      (Ω only):  0.196721
+Risk Reduction:             58.33%
+Bootstrap 95% CI:           [12.51%, 83.33%]
+Bootstrap p-value:          0.0155
+
+--- Elite Users (Top 19%) ---
+Elite Full LTD:   0.084746
+Elite Ablated LTD:0.152542
+Elite Reduction:  44.44%
+Elite 95% CI:     [-25.00%, 82.46%]
+Elite p-value:    0.0739

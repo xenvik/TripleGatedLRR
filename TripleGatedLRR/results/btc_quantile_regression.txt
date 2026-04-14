@@ -1,0 +1,13 @@
+=== BTC Quantile Regression ===
+Tests whether each signal reduces extreme losses
+
+
+--- q=0.1 (10th percentile) ---
+LRR_Oracle_Sen: coef=-0.439429  p=0.3903  n.s.
+HITS_Sen: coef=-0.044257  p=0.4484  n.s.
+PageRank_Sen: coef=-0.019460  p=0.7402  n.s.
+
+--- q=0.2 (20th percentile) ---
+LRR_Oracle_Sen: coef=-0.447200  p=0.1597  n.s.
+HITS_Sen: coef=-0.038332  p=0.1745  n.s.
+PageRank_Sen: coef=-0.055360  p=0.1133  n.s.

@@ -1,0 +1,27 @@
+=== Social Network Statistics ===
+Source: Twitter retweet + mention graph (all 6 assets combined)
+
+--- Graph Topology ---
+Nodes (users):            61,297
+Edges (interactions):     98,013
+Density:                0.000026
+Mean out-degree:          1.5990
+Avg clustering coeff:     0.1793
+
+--- Score Concentration (Gini Coefficient) ---
+LRR Oracle Gini:  0.3707
+PageRank Gini:    0.0009
+HITS Gini:        0.9412
+(1.0 = perfectly concentrated, 0.0 = perfectly equal)
+
+--- LRR Elite User Share ---
+top_1pct_share: 5.8% of total LRR signal weight
+top_5pct_share: 19.0% of total LRR signal weight
+top_10pct_share: 29.9% of total LRR signal weight
+top_20pct_share: 45.4% of total LRR signal weight
+
+--- Cross-Signal Score Correlations (common users) ---
+Common users: 61,297
+r(LRR, PageRank): 0.4280
+r(LRR, HITS):     0.1814
+r(PageRank, HITS):0.2673

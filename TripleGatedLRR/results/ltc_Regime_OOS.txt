@@ -1,0 +1,9 @@
+=== LTC Regime-Conditioned OOS Validation ===
+Model trained on full training set (no regime split in training)
+Test set evaluated separately per HMM-detected regime
+
+Regime         N   LRR_RMSE   LRR_DA   AR1_DA  LRR>AR?
+-------------------------------------------------------
+CALM         104   0.030632   0.4327   0.4327       no
+CRISIS        17   0.083828   0.5882   0.5882       no
+FULL         121   0.042353   0.4545   0.4545       no

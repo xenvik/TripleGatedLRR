@@ -1,0 +1,8 @@
+=== DOGE Sub-Period Robustness ===
+Split date: 2021-11-10 (BTC all-time high)
+
+Period       N    LRR→ω p   Sig    ω→LRR p   Sig   LRR_LTD    PR_LTD
+-----------------------------------------------------------------
+Bull       158        nan              nan           0.125    0.1875
+Bear       446     0.4466  n.s.     0.0163     *    0.0889    0.1556
+Full       604        0.0   ***        0.0   ***    0.1148    0.1311

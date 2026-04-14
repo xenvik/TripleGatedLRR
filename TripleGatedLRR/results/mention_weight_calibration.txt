@@ -1,0 +1,18 @@
+=== Mention Weight Empirical Calibration ===
+
+Methodology:
+  For each retweet (A->B), compute corr(A_sentiment, B_recent_7d_mean)
+  For each mention (A->B), compute corr(A_sentiment, B_recent_7d_mean)
+  Mention weight = mention_corr / retweet_corr, clipped to [0.1, 1.0]
+
+Results:
+  Retweet pairs analysed: 1780
+  Retweet sentiment correlation: r = 0.1200
+  Mention pairs analysed: 4897
+  Mention sentiment correlation: r = 0.1000
+  Raw ratio: 0.8329
+  Calibrated mention weight: w_m = 0.833
+
+Interpretation:
+  Mentions carry nearly as much sentiment alignment as retweets.
+  The two edge types are relatively interchangeable.

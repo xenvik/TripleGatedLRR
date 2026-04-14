@@ -1,0 +1,8 @@
+=== BTC Diebold-Mariano Test ===
+H0: AR(1) and LRR-VAR have equal predictive accuracy
+
+dm_statistic: -0.18887197782795107
+dm_pvalue: 0.8501931567189354
+ar1_mse: 0.0007278813517515515
+var_mse: 0.00072814316286916
+significant: False

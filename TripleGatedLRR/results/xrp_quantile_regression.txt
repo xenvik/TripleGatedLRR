@@ -1,0 +1,13 @@
+=== XRP Quantile Regression ===
+Tests whether each signal reduces extreme losses
+
+
+--- q=0.1 (10th percentile) ---
+LRR_Oracle_Sen: coef=-0.875764  p=0.2368  n.s.
+HITS_Sen: coef=-0.047976  p=0.5277  n.s.
+PageRank_Sen: coef=0.006726  p=0.9357  n.s.
+
+--- q=0.2 (20th percentile) ---
+LRR_Oracle_Sen: coef=-0.711234  p=0.1420  n.s.
+HITS_Sen: coef=-0.040082  p=0.3283  n.s.
+PageRank_Sen: coef=0.042473  p=0.3822  n.s.

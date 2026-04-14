@@ -1,0 +1,17 @@
+=== XRP Risk & Information Flow ===
+
+Lower Tail Dependence (LTD):
+  LRR_Oracle: 0.081967
+  PageRank: 0.196721
+  HITS: 0.131148
+
+Joint Tail Crash Counts (lambda=0.10):
+  LRR_Oracle: 5 joint crashes (out of 61 signal-tail days, N=604)
+  PageRank: 12 joint crashes (out of 61 signal-tail days, N=604)
+  HITS: 8 joint crashes (out of 61 signal-tail days, N=604)
+
+Transfer Entropy (TE, 7-day lead, bits):
+  [True conditional MI: TE(X->Y)=I(Y_t;X_{t-7}|Y_{t-7})]
+  LRR_Oracle: 0.045195
+  PageRank: 0.101552
+  HITS: 0.076159

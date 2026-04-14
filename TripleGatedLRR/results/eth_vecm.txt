@@ -1,0 +1,5 @@
+=== ETH VECM Analysis (all signals) ===
+
+LRR: rank=3 F=9.885 p=0.0000 ***
+HITS: rank=3 F=5.922 p=0.0005 ***
+PR: rank=3 F=9.130 p=0.0000 ***

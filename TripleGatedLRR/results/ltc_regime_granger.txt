@@ -1,0 +1,4 @@
+=== LTC Regime-Specific Granger Causality ===
+
+CALM (n=467): F=6.584  p=0.0000  ***
+CRISIS (n=134): Cannot test Granger Causality in a model with 0 lags.

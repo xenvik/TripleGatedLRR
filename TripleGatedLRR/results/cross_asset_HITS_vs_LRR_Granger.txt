@@ -1,0 +1,21 @@
+=== Gap 8: Cross-Asset Signal↔omega Granger Comparison ===
+Critical test: Is LRR↔omega unique to cognitive gating,
+or does a pure link-structure signal (HITS) show the same dynamic?
+
+Asset     LRR→ω p   Sig   HITS→ω p   Sig    PR→ω p  LRR unique?
+------------------------------------------------------------
+BTC           0.0   ***     0.0005   ***       0.0       SHARED
+DOGE          0.0   ***     0.0002   ***       0.0       SHARED
+ETH           0.0   ***     0.0003   ***       0.0       SHARED
+LTC           0.0   ***     0.0003   ***       0.0       SHARED
+SOL           0.0   ***     0.0002   ***       0.0       SHARED
+XRP           0.0   ***     0.0002   ***       0.0       SHARED
+
+--- Interpretation ---
+LRR↔omega UNIQUE to LRR: 0/6 assets
+LRR↔omega SHARED with HITS: 6/6 assets
+
+CONCLUSION: The dynamic is partially structural (network-driven).
+LRR amplifies it through cognitive gating but does not originate it.
+Compare F-statistics: if LRR F > HITS F, LRR is still the
+stronger driver despite the shared significance.

@@ -1,0 +1,4 @@
+asset,period,n,LRR_to_omega_p,LRR_to_omega_sig,omega_to_LRR_p,omega_to_LRR_sig,LRR_LTD,PR_LTD
+DOGE,Bull,158,,,,,0.125,0.1875
+DOGE,Bear,446,0.4466,n.s.,0.0163,*,0.0889,0.1556
+DOGE,Full,604,0.0,***,0.0,***,0.1148,0.1311

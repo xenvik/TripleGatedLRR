@@ -1,0 +1,33 @@
+=== Information Efficiency Ratio (IER = TE / LTD) ===
+Higher IER = more predictive information per unit of crash exposure
+
+Asset    Signal                 TE        LTD        IER
+--------------------------------------------------------
+BTC      HITS             0.069737   0.114754   0.607711
+BTC      LRR_Oracle       0.047934   0.114754   0.417713
+BTC      PageRank         0.090128   0.131148   0.687227
+DOGE     HITS             0.040725   0.147541   0.276026
+DOGE     LRR_Oracle       0.021257   0.114754   0.185241
+DOGE     PageRank         0.051422   0.131148   0.392093
+ETH      HITS             0.074614   0.131148   0.568928
+ETH      LRR_Oracle       0.042330   0.114754   0.368880
+ETH      PageRank         0.090840   0.163934   0.554122
+LTC      HITS             0.056718   0.081967   0.691964
+LTC      LRR_Oracle       0.031821   0.098361   0.323516
+LTC      PageRank         0.085857   0.131148   0.654659
+SOL      HITS             0.051339   0.098361   0.521946
+SOL      LRR_Oracle       0.014615   0.081967   0.178309
+SOL      PageRank         0.052966   0.180328   0.293720
+XRP      HITS             0.076159   0.131148   0.580716
+XRP      LRR_Oracle       0.045195   0.081967   0.551374
+XRP      PageRank         0.101552   0.196721   0.516223
+
+Mean IER across all assets:
+  HITS: 0.541215
+  PageRank: 0.516341
+  LRR_Oracle: 0.337506
+
+--- T2.4 IER Superiority Test (LRR vs PageRank) ---
+Mean IER diff (LRR - PageRank): -0.178835
+95% CI: [-0.265400, -0.082219]
+Bootstrap p (H0: LRR_IER <= PR_IER): 0.9990 

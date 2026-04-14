@@ -1,0 +1,13 @@
+=== ETH Quantile Regression ===
+Tests whether each signal reduces extreme losses
+
+
+--- q=0.1 (10th percentile) ---
+LRR_Oracle_Sen: coef=-0.220404  p=0.7333  n.s.
+HITS_Sen: coef=0.029237  p=0.7008  n.s.
+PageRank_Sen: coef=0.044950  p=0.5991  n.s.
+
+--- q=0.2 (20th percentile) ---
+LRR_Oracle_Sen: coef=-0.883043  p=0.0275  *
+HITS_Sen: coef=-0.064073  p=0.1045  n.s.
+PageRank_Sen: coef=0.009511  p=0.8532  n.s.

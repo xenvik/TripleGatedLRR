@@ -1,0 +1,5 @@
+=== DOGE VECM Analysis (all signals) ===
+
+LRR: rank=3 F=10.027 p=0.0000 ***
+HITS: rank=3 F=6.131 p=0.0004 ***
+PR: rank=3 F=9.395 p=0.0000 ***

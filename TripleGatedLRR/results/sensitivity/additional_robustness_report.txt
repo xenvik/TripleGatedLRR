@@ -1,0 +1,26 @@
+=== Additional Robustness Tests ===
+
+--- 1. Johansen Cointegration ---
+6/6 assets show cointegration
+  BTC: COINTEGRATED — consider VECM
+  ETH: COINTEGRATED — consider VECM
+  DOGE: COINTEGRATED — consider VECM
+  LTC: COINTEGRATED — consider VECM
+  SOL: COINTEGRATED — consider VECM
+  XRP: COINTEGRATED — consider VECM
+
+--- 2. Expanding-Window HMM Concordance ---
+  BTC: 87.6% concordance (475/542 points)
+  ETH: 62.7% concordance (340/542 points)
+  DOGE: 93.9% concordance (509/542 points)
+  LTC: 86.7% concordance (470/542 points)
+  SOL: 89.7% concordance (486/542 points)
+  XRP: 95.8% concordance (519/542 points)
+Mean concordance: 86.1%
+
+--- 3. Winsorized Transfer Entropy (5% trim) ---
+  Full_LRR: mean raw=0.0339 mean wins=0.3579 (+1167.2%)
+  PageRank: mean raw=0.0788 mean wins=0.3861 (+422.7%)
+  HITS: mean raw=0.0615 mean wins=0.3724 (+532.4%)
+  Simple: mean raw=0.0738 mean wins=0.3722 (+436.3%)
+If rankings preserved after winsorization: TE differences are structural.

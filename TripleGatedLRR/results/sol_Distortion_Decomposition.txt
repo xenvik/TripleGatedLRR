@@ -1,0 +1,44 @@
+=== SOL Cognitive Distortion Decomposition (T3.1) ===
+
+Source: Beck's 14-category cognitive distortion taxonomy
+Test: Bivariate VAR Granger causality (LRR ↔ each distortion)
+
+--- Individual Distortion Results ---
+Distortion             Cluster                    LRR->Dist p  Dist->LRR p  Correlation
+---------------------------------------------------------------------------------------
+dichotoreasoning       Herd_Cognitive_Bias           0.0000***     0.0000***      -0.1434
+labeling               Overconfidence_Ego            0.0000***     0.2954         0.0136
+magnification          Overconfidence_Ego            0.0000***     0.0000***      -0.0831
+mindreading            Herd_Cognitive_Bias           0.0000***     0.0491 *       0.0053
+overgeneralizing       Herd_Cognitive_Bias           0.0000***     0.0000***      -0.1260
+shouldment             Overconfidence_Ego            0.0000***     0.0000***      -0.0431
+negativereasoning      Fear_Catastrophising          0.6114       0.0903        -0.0995
+catastrophizing        Other                            nan          nan            nan
+emotionreasoning       Other                            nan          nan            nan
+fortunetelling         Other                            nan          nan            nan
+mentalfiltering        Other                            nan          nan            nan
+personalizing          Other                            nan          nan            nan
+mentalfilteringplus    Other                            nan          nan            nan
+disqualpositive        Other                            nan          nan            nan
+
+--- Cluster-Level Results ---
+Cluster                     N  LRR->Cluster p  Cluster->LRR p
+--------------------------------------------------------------
+Fear_Catastrophising        5        0.6860          0.0990  
+Overconfidence_Ego          4        0.0000***        0.0000***
+Herd_Cognitive_Bias         5        0.0000***        0.0000***
+
+--- Key Findings ---
+LRR significantly predicts distortion shifts: 6/14 distortions
+  dichotoreasoning (Herd_Cognitive_Bias): p=0.0000***
+  labeling (Overconfidence_Ego): p=0.0000***
+  magnification (Overconfidence_Ego): p=0.0000***
+  mindreading (Herd_Cognitive_Bias): p=0.0000***
+  overgeneralizing (Herd_Cognitive_Bias): p=0.0000***
+  shouldment (Overconfidence_Ego): p=0.0000***
+Distortions significantly predict LRR: 5/14 distortions
+  dichotoreasoning (Herd_Cognitive_Bias): p=0.0000***
+  magnification (Overconfidence_Ego): p=0.0000***
+  mindreading (Herd_Cognitive_Bias): p=0.0491*
+  overgeneralizing (Herd_Cognitive_Bias): p=0.0000***
+  shouldment (Overconfidence_Ego): p=0.0000***

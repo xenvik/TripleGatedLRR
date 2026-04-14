@@ -1,0 +1,17 @@
+=== SOL Risk & Information Flow ===
+
+Lower Tail Dependence (LTD):
+  LRR_Oracle: 0.081967
+  PageRank: 0.180328
+  HITS: 0.098361
+
+Joint Tail Crash Counts (lambda=0.10):
+  LRR_Oracle: 5 joint crashes (out of 61 signal-tail days, N=604)
+  PageRank: 11 joint crashes (out of 61 signal-tail days, N=604)
+  HITS: 6 joint crashes (out of 61 signal-tail days, N=604)
+
+Transfer Entropy (TE, 7-day lead, bits):
+  [True conditional MI: TE(X->Y)=I(Y_t;X_{t-7}|Y_{t-7})]
+  LRR_Oracle: 0.014615
+  PageRank: 0.052966
+  HITS: 0.051339

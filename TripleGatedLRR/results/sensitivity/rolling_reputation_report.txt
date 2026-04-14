@@ -1,0 +1,17 @@
+=== Rolling Reputation Validation (v2) ===
+
+Question: Does computing reputation causally (expanding window)
+rather than from the full corpus change the Granger results?
+
+Asset    r(S,R)     StaticF    StaticP    RollF      RollP     
+------------------------------------------------------------
+BTC      0.8057     2.637      0.1046     nan        nan       
+ETH      0.7898     2.545      0.1109     nan        nan       
+DOGE     0.7937     2.55       0.1105     nan        nan       
+LTC      0.7869     2.564      0.1095     nan        nan       
+SOL      0.8051     2.536      0.1115     nan        nan       
+XRP      0.7879     2.542      0.111      nan        nan       
+
+Mean static-rolling correlation: r=0.7948
+NOTE: Main pipeline reports F~8.17 on 604 days.
+This uses 579 days.

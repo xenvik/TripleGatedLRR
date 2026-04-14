@@ -1,0 +1,15 @@
+=== LTC Con Gate Ablation ===
+
+--- Full Population ---
+Full Oracle LTD  (Ω + Con): 0.098361
+Ablated LTD      (Ω only):  0.131148
+Risk Reduction:             25.00%
+Bootstrap 95% CI:           [-77.00%, 69.70%]
+Bootstrap p-value:          0.3614
+
+--- Elite Users (Top 19%) ---
+Elite Full LTD:   0.084746
+Elite Ablated LTD:0.084746
+Elite Reduction:  0.00%
+Elite 95% CI:     [-245.83%, 66.67%]
+Elite p-value:    0.5700

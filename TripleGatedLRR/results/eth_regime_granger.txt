@@ -1,0 +1,4 @@
+=== ETH Regime-Specific Granger Causality ===
+
+CALM (n=337): Cannot test Granger Causality in a model with 0 lags.
+CRISIS (n=264): F=10.849  p=0.0000  ***

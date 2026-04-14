@@ -1,0 +1,17 @@
+=== BTC Risk & Information Flow ===
+
+Lower Tail Dependence (LTD):
+  LRR_Oracle: 0.114754
+  PageRank: 0.131148
+  HITS: 0.114754
+
+Joint Tail Crash Counts (lambda=0.10):
+  LRR_Oracle: 7 joint crashes (out of 61 signal-tail days, N=604)
+  PageRank: 8 joint crashes (out of 61 signal-tail days, N=604)
+  HITS: 7 joint crashes (out of 61 signal-tail days, N=604)
+
+Transfer Entropy (TE, 7-day lead, bits):
+  [True conditional MI: TE(X->Y)=I(Y_t;X_{t-7}|Y_{t-7})]
+  LRR_Oracle: 0.047934
+  PageRank: 0.090128
+  HITS: 0.069737

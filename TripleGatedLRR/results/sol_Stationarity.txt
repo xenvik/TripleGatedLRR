@@ -1,0 +1,2 @@
+Initial LRR_Oracle_Sen ADF p-value: 0.0000
+Signal is naturally stationary.

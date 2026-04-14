@@ -1,0 +1,25 @@
+=== Enhanced LRR Comparison Suite ===
+
+--- Neut Gate Statistics ---
+Neut mean: 0.7190
+Neut zero fraction: 0.0%
+Con mean: 0.1344
+Con zero fraction: 68.7%
+
+--- Cross-Signal Comparison (mean across assets) ---
+Signal          Crashes_t2 Crashes_t5  StabRatio  CrashCorr    RegimeD
+----------------------------------------------------------------------
+Full_LRR               6.2        6.2      2.061      0.087      0.156
+PageRank               9.5        9.5      1.138      0.344      0.101
+HITS                   7.2        7.2      1.586      0.365      0.083
+Simple                10.5       10.5      1.137      0.343      0.100
+LRR_Social            10.3       10.3      1.237      0.349      0.070
+Neut_LRR              11.2       11.2      1.178      0.396      0.079
+LRR_NoCon              9.3        9.3      1.281      0.357      0.065
+
+--- Interpretation ---
+Crashes_t2: Joint crash count with min_events=2 (lower=better)
+Crashes_t5: Joint crash count with min_events=5 (lower=better)
+StabRatio: crash_std/normal_std (lower=more stable during crashes)
+CrashCorr: signal-price correlation during crashes (lower=more independent)
+RegimeD: Cohen's d for bull vs bear signal means (higher=better discrimination)

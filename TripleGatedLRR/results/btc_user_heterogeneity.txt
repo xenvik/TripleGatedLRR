@@ -1,0 +1,23 @@
+=== BTC User Heterogeneity Analysis ===
+
+--- LRR Score Concentration ---
+Total users in LRR graph: 61,297
+LRR Gini coefficient:     0.3706
+PageRank Gini:            0.0009
+
+--- Elite User Share of Total LRR Signal Weight ---
+Top  1% users: 5.8% of total LRR weight
+Top  5% users: 19.0% of total LRR weight
+Top 10% users: 29.9% of total LRR weight
+Top 20% users: 45.4% of total LRR weight
+
+--- Rationality by LRR Tier ---
+Top 20% LRR users mean omega: 0.5404
+Bottom 80% LRR users mean omega: 0.5242
+Difference: 0.0162 (higher rationality in top users)
+
+--- Activity Distribution ---
+Activity Gini: 0.6163
+90th pct tweets/user: 9942
+99th pct tweets/user: 33762
+Max tweets by one user: 57717

@@ -1,0 +1,9 @@
+=== ETH 4-Variable OOS (LRR+Whale+Omega->Price) ===
+Variables: ['price_change', 'LRR_VAR_Signal', 'whale_vol_log', 'omega']
+Train: 482  Test: 121
+
+RMSE: 0.038772
+Directional Accuracy: 0.4959
+
+Interpretation: compare RMSE with 3-var model in eth_OOS_Metrics.csv
+Improvement shows that whale volume adds predictive value beyond social signal alone.

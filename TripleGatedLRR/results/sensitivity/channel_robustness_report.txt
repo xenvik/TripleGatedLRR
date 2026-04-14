@@ -1,0 +1,50 @@
+=== Channel Concentration & Leave-One-Out Robustness ===
+
+--- Data Provenance ---
+The corpus is sourced from 76 curated cryptocurrency-focused
+Twitter channels, selected for sustained activity and domain relevance.
+This pre-selection acts as a first-pass quality filter — the reputation
+propagation then differentiates information quality within this
+already-curated population. Traditional bot detection is not applicable
+to this setting, as channels are established accounts rather than
+anonymous users from an unfiltered keyword crawl.
+
+--- Channel Concentration ---
+  n_channels: 76
+  total_tweets: 350800
+  tweet_gini: 0.6163
+  top1_channel_share: 0.1645
+  top3_channel_share: 0.3055
+  top5_channel_share: 0.3815
+  top10_channel_share: 0.5263
+  mean_tweets_per_channel: 4615.8
+  max_tweets_one_channel: 57717
+  min_tweets_one_channel: 5
+
+NOTE: High tweet Gini indicates substantial concentration.
+A few channels produce the majority of tweets.
+
+--- Leave-One-Out Robustness (BTC) ---
+Baseline Granger F-stat (all channels): 12.15
+Baseline p-value: 0.0
+
+Channels tested: 76
+Still significant (p<0.05) after dropping any single channel: 75/76
+F-stat range across LOO: 0.953 - 61.566
+Mean F-stat: 13.094
+Std F-stat: 6.766
+
+CONCLUSION: Results are largely robust to single-channel removal.
+1 channel(s) are influential but not critical.
+
+--- Most Influential Channels (by F-stat change) ---
+  VitalikButerin: F=61.566 (change: 406.7%) tweets: 2642 (0.75%)
+  mcshane_writes: F=40.923 (change: 236.8%) tweets: 5870 (1.67%)
+  SatoshiLite: F=0.953 (change: -92.2%) tweets: 1174 (0.33%)
+  brian_armstrong: F=17.884 (change: 47.2%) tweets: 1285 (0.37%)
+  ethereum: F=6.455 (change: -46.9%) tweets: 561 (0.16%)
+  Bitcoin: F=16.858 (change: 38.8%) tweets: 1389 (0.4%)
+  ethhub_io: F=16.671 (change: 37.2%) tweets: 24 (0.01%)
+  ethereumJoseph: F=15.922 (change: 31.0%) tweets: 210 (0.06%)
+  maxkeiser: F=9.647 (change: -20.6%) tweets: 25777 (7.35%)
+  Cointelegraph: F=14.61 (change: 20.2%) tweets: 57717 (16.45%)

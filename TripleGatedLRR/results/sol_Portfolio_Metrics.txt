@@ -1,0 +1,21 @@
+=== SOL Portfolio Backtest ===
+Strategy: Long/Cash | Signal threshold: 20-day rolling median
+Transaction cost: 0.1% per round-trip | Annualisation: 365 days
+
+Strategy              TotalRet%   AnnRet%   Sharpe   Sortino   MaxDD%   Calmar  WinRate%     SR_p
+-----------------------------------------------------------------------------------------------
+Buy-and-Hold              -28.7     -18.5    0.475     0.720    -96.3   -0.192      48.8  0.264
+Simple_Sen                 85.4      45.2    0.859     1.114    -78.9    0.573      35.9  0.145
+FinBERT_Sen               101.7      52.8    0.921     1.215    -76.6    0.689      35.6  0.129
+PageRank_Sen               28.9      16.6    0.592     0.764    -86.7    0.191      34.5  0.236
+HITS_Sen                  -79.2     -61.3   -0.839    -0.973    -93.1   -0.658      31.2  0.869
+LRR_Social_Sen             64.1      34.9    0.771     0.999    -82.8    0.421      34.9  0.169
+LRR_Oracle_Sen            -61.8     -44.1   -0.359    -0.478    -91.7   -0.481      31.3  0.685
+
+--- Regime-Conditioned Sharpe (LRR_Oracle_Sen, Long/Cash) ---
+  Full      : Sharpe=-0.359  DA=31.3%  p=0.685
+  CALM      : Sharpe=-1.726  DA=29.9%  p=0.974
+  CRISIS    : Sharpe=4.219  DA=40.0%  p=0.004**
+
+--- Long/Short Variant (LRR_Oracle_Sen) ---
+  Full sample: Sharpe=-0.922  Ann=-85.8%  MaxDD=-98.3%  p=0.881

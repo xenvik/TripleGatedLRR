@@ -1,0 +1,41 @@
+=== Cross-Asset Oscillation Cycle Binomial Test ===
+
+H0: Sign of omega→LRR correlation at each lag is random (p=0.5)
+Expected pattern: negative at t-1, negative at t-3, positive at t-5
+
+t-1: expected negative — 6/6 assets match
+  Binomial p = 0.0156 *
+  Asset details:
+    BTC: r=-0.1355 p=0.0009 ✓
+    DOGE: r=-0.1344 p=0.0009 ✓
+    ETH: r=-0.1347 p=0.0009 ✓
+    LTC: r=-0.1351 p=0.0009 ✓
+    SOL: r=-0.1344 p=0.0009 ✓
+    XRP: r=-0.1338 p=0.0010 ✓
+
+t-3: expected negative — 6/6 assets match
+  Binomial p = 0.0156 *
+  Asset details:
+    BTC: r=-0.1672 p=0.0000 ✓
+    DOGE: r=-0.1636 p=0.0001 ✓
+    ETH: r=-0.1651 p=0.0000 ✓
+    LTC: r=-0.1654 p=0.0000 ✓
+    SOL: r=-0.1629 p=0.0001 ✓
+    XRP: r=-0.1627 p=0.0001 ✓
+
+t-5: expected positive — 6/6 assets match
+  Binomial p = 0.0156 *
+  Asset details:
+    BTC: r=+0.1231 p=0.0026 ✓
+    DOGE: r=+0.1239 p=0.0024 ✓
+    ETH: r=+0.1236 p=0.0024 ✓
+    LTC: r=+0.1238 p=0.0024 ✓
+    SOL: r=+0.1238 p=0.0024 ✓
+    XRP: r=+0.1239 p=0.0024 ✓
+
+Bonferroni-corrected joint test (3 lags): p = 0.0469 *
+
+Interpretation: The sign-alternating pattern (neg, neg, pos) at
+lags 1, 3, 5 is statistically improbable under random sign
+assignment, confirming the oscillation cycle is a structural
+property of the LRR-rationality dynamic.

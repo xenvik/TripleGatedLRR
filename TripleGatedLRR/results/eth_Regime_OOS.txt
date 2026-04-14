@@ -1,0 +1,8 @@
+=== ETH Regime-Conditioned OOS Validation ===
+Model trained on full training set (no regime split in training)
+Test set evaluated separately per HMM-detected regime
+
+Regime         N   LRR_RMSE   LRR_DA   AR1_DA  LRR>AR?
+-------------------------------------------------------
+CALM         112   0.028498   0.4821   0.4821       no
+FULL         121   0.038762   0.4959   0.4959       no

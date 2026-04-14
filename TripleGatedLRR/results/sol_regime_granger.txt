@@ -1,0 +1,4 @@
+=== SOL Regime-Specific Granger Causality ===
+
+CALM (n=493): F=7.417  p=0.0065  **
+CRISIS (n=108): F=14.566  p=0.0000  ***

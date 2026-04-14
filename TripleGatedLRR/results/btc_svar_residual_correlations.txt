@@ -1,0 +1,15 @@
+=== BTC SVAR Residual Correlation Matrix ===
+Justifies Cholesky ordering: LRR → whale_vol → price
+
+Contemporaneous residual correlations (reduced-form VAR):
+
+                price_change  LRR_Oracle_Sen   omega
+price_change          1.0000          0.0092  0.0305
+LRR_Oracle_Sen        0.0092          1.0000  0.5223
+omega                 0.0305          0.5223  1.0000
+
+--- Ordering Justification ---
+r(LRR_Oracle_S, price_change): +0.0092  [LOW — ordering robust]
+
+Conclusion: if |r(LRR, price)| < 0.15, the contemporaneous
+correlation is low enough that Cholesky ordering is innocuous.

@@ -1,0 +1,8 @@
+=== ETH Diebold-Mariano Test ===
+H0: AR(1) and LRR-VAR have equal predictive accuracy
+
+dm_statistic: -0.5273865543717959
+dm_pvalue: 0.5979251787065649
+ar1_mse: 0.0015016824441370343
+var_mse: 0.0015025101841169733
+significant: False

@@ -1,0 +1,13 @@
+=== DOGE Quantile Regression ===
+Tests whether each signal reduces extreme losses
+
+
+--- q=0.1 (10th percentile) ---
+LRR_Oracle_Sen: coef=-0.443226  p=0.7411  n.s.
+HITS_Sen: coef=-0.026180  p=0.7642  n.s.
+PageRank_Sen: coef=0.023029  p=0.7997  n.s.
+
+--- q=0.2 (20th percentile) ---
+LRR_Oracle_Sen: coef=-0.332726  p=0.4266  n.s.
+HITS_Sen: coef=-0.027230  p=0.5168  n.s.
+PageRank_Sen: coef=-0.025226  p=0.6124  n.s.

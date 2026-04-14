@@ -1,0 +1,21 @@
+=== XRP Portfolio Backtest ===
+Strategy: Long/Cash | Signal threshold: 20-day rolling median
+Transaction cost: 0.1% per round-trip | Annualisation: 365 days
+
+Strategy              TotalRet%   AnnRet%   Sharpe   Sortino   MaxDD%   Calmar  WinRate%     SR_p
+-----------------------------------------------------------------------------------------------
+Buy-and-Hold              -56.0     -39.1   -0.105    -0.153    -77.8   -0.503      50.2  0.555
+Simple_Sen                 27.6      15.8    0.541     0.643    -63.5    0.249      37.4  0.250
+FinBERT_Sen                44.1      24.7    0.667     0.819    -56.9    0.434      37.0  0.205
+PageRank_Sen               20.6      12.0    0.483     0.572    -65.2    0.183      36.7  0.267
+HITS_Sen                  -48.2     -32.8   -0.362    -0.397    -68.6   -0.478      32.9  0.671
+LRR_Social_Sen             38.1      21.5    0.624     0.740    -59.1    0.364      37.3  0.229
+LRR_Oracle_Sen            -24.2     -15.4    0.005     0.007    -72.5   -0.212      34.5  0.465
+
+--- Regime-Conditioned Sharpe (LRR_Oracle_Sen, Long/Cash) ---
+  Full      : Sharpe=0.005  DA=34.5%  p=0.465
+  CALM      : Sharpe=-1.126  DA=34.4%  p=0.906
+  CRISIS    : Sharpe=2.413  DA=34.7%  p=0.067
+
+--- Long/Short Variant (LRR_Oracle_Sen) ---
+  Full sample: Sharpe=0.112  Ann=-25.5%  MaxDD=-80.2%  p=0.428

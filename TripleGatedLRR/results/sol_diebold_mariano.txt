@@ -1,0 +1,8 @@
+=== SOL Diebold-Mariano Test ===
+H0: AR(1) and LRR-VAR have equal predictive accuracy
+
+dm_statistic: -0.13203874658190903
+dm_pvalue: 0.8949536446919684
+ar1_mse: 0.006151820867130852
+var_mse: 0.006152426374696234
+significant: False

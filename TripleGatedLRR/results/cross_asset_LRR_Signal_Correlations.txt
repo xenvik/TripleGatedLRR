@@ -1,0 +1,50 @@
+=== Cross-Asset Signal Independence Check ===
+Tests whether 6-asset "replication" is independent
+or driven by the shared social graph.
+
+--- LRR Oracle Daily Signal Pairwise Correlations ---
+        BTC   DOGE    ETH    LTC    SOL    XRP
+BTC  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+DOGE 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ETH  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+LTC  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+SOL  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+XRP  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+
+Mean pairwise r (LRR signals): 1.0000
+Min pairwise r:  1.0000
+Max pairwise r:  1.0000
+
+--- Omega Daily Signal Pairwise Correlations ---
+        BTC   DOGE    ETH    LTC    SOL    XRP
+BTC  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+DOGE 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ETH  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+LTC  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+SOL  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+XRP  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+
+Mean pairwise r (omega signals): 1.0000
+
+--- Price Return Pairwise Correlations ---
+        BTC   DOGE    ETH    LTC    SOL    XRP
+BTC  1.0000 0.6578 0.8599 0.8020 0.6628 0.7246
+DOGE 0.6578 1.0000 0.6813 0.6519 0.5544 0.6478
+ETH  0.8599 0.6813 1.0000 0.8095 0.7214 0.7441
+LTC  0.8020 0.6519 0.8095 1.0000 0.6542 0.7516
+SOL  0.6628 0.5544 0.7214 0.6542 1.0000 0.6154
+XRP  0.7246 0.6478 0.7441 0.7516 0.6154 1.0000
+
+Mean pairwise r (price returns): 0.7026
+
+--- Interpretation ---
+HIGH correlation: 6-asset consistency is largely driven by
+the shared social graph. Cross-asset findings are NOT independent.
+
+Note (v3.0): With Con removed from propagation, reputation
+weights are identical across assets (only V-Anchor differs,
+at phi=0.15 weight). Signal differentiation across assets
+comes from the aggregation step where sen × Con interacts
+with asset-specific sentiment patterns. The LRR reputation
+weights represent USER quality (graph + omega), while
+asset-specificity enters through the SIGNAL (sen × Con).

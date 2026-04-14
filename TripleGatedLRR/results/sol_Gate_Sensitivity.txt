@@ -1,0 +1,15 @@
+=== SOL Con Gate Ablation ===
+
+--- Full Population ---
+Full Oracle LTD  (Ω + Con): 0.081967
+Ablated LTD      (Ω only):  0.180328
+Risk Reduction:             54.55%
+Bootstrap 95% CI:           [5.65%, 82.79%]
+Bootstrap p-value:          0.0205
+
+--- Elite Users (Top 19%) ---
+Elite Full LTD:   0.050847
+Elite Ablated LTD:0.152542
+Elite Reduction:  66.67%
+Elite 95% CI:     [-33.33%, 81.59%]
+Elite p-value:    0.0804

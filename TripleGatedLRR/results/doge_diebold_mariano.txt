@@ -1,0 +1,8 @@
+=== DOGE Diebold-Mariano Test ===
+H0: AR(1) and LRR-VAR have equal predictive accuracy
+
+dm_statistic: 1.4055359907941611
+dm_pvalue: 0.1598619547961262
+ar1_mse: 0.004382493372540455
+var_mse: 0.004378031947124878
+significant: False

@@ -1,0 +1,13 @@
+=== LTC Quantile Regression ===
+Tests whether each signal reduces extreme losses
+
+
+--- q=0.1 (10th percentile) ---
+LRR_Oracle_Sen: coef=-0.892957  p=0.2892  n.s.
+HITS_Sen: coef=-0.061665  p=0.3396  n.s.
+PageRank_Sen: coef=-0.023697  p=0.7814  n.s.
+
+--- q=0.2 (20th percentile) ---
+LRR_Oracle_Sen: coef=-0.849358  p=0.0328  *
+HITS_Sen: coef=-0.049114  p=0.2374  n.s.
+PageRank_Sen: coef=-0.026843  p=0.5735  n.s.

@@ -1,0 +1,12 @@
+=== Cross-Asset Pooled Con Gate Test (Fisher's Method) ===
+
+H0: Con gate provides no LTD reduction in ANY asset
+Method: Fisher's combined probability test
+X^2 = -2 * sum(ln(p_i))  ~  chi2(2k) under H0
+
+Bootstrap (6 assets): chi2=29.0287  p_combined=0.003902 **
+  Individual p-values: [0.1837, 0.1024, 0.23, 0.3614, 0.0205, 0.0155]
+
+Permutation (6 assets): chi2=22.0829  p_combined=0.036601 *
+  Individual p-values: [0.52, 0.288, 0.447, 0.34, 0.032, 0.022]
+

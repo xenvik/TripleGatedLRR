@@ -1,0 +1,7 @@
+=== ETH Partial Granger Causality ===
+All signals tested simultaneously in one VAR model.
+This controls for the other signals when testing each one.
+
+LRR_Oracle_Sen: F=11.165  p=0.0000  ***
+HITS_Sen: F=5.221  p=0.0001  ***
+PageRank_Sen: F=6.401  p=0.0000  ***

@@ -1,0 +1,7 @@
+asset,n_coint_relations,trace_stat_r0,crit_95_r0,trace_stat_r1,crit_95_r1,cointegrated,conclusion
+BTC,3,244.567,29.796,127.354,15.494,True,COINTEGRATED — consider VECM
+ETH,3,235.432,29.796,124.883,15.494,True,COINTEGRATED — consider VECM
+DOGE,3,218.247,29.796,115.456,15.494,True,COINTEGRATED — consider VECM
+LTC,3,233.694,29.796,132.414,15.494,True,COINTEGRATED — consider VECM
+SOL,3,229.267,29.796,108.667,15.494,True,COINTEGRATED — consider VECM
+XRP,3,231.684,29.796,127.413,15.494,True,COINTEGRATED — consider VECM

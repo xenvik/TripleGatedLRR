@@ -1,0 +1,14 @@
+=== DOGE Signal↔omega Granger Comparison ===
+All four signals tested in identical VAR(omega, signal, price)
+
+Signal            Sig→ω F        p   Sig   ω→Sig F        p   Sig
+----------------------------------------------------------
+LRR Oracle         13.867   0.0000   ***     7.481   0.0000   ***
+HITS                6.517   0.0002   ***     4.992   0.0019    **
+PageRank            5.128   0.0000   ***    13.699   0.0000   ***
+Simple              4.844   0.0000   ***    13.676   0.0000   ***
+
+--- Interpretation ---
+RESULT: BOTH LRR and HITS show omega Granger causality.
+The dynamic may be partially driven by network structure.
+Compare F-statistics: if LRR F > HITS F, LRR is the stronger driver.

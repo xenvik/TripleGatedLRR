@@ -1,0 +1,4 @@
+=== XRP Regime-Specific Granger Causality ===
+
+CALM (n=484): F=16.982  p=0.0000  ***
+CRISIS (n=117): Cannot test Granger Causality in a model with 0 lags.
