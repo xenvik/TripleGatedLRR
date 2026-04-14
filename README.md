@@ -86,34 +86,38 @@ pip install -r requirements.txt
 
 ## Data Format
 
-### twitter.csv (required, have added a sample dataset here. Contact second author Anton Kolonin for full dataset due to privacy concern)
+### twitter.csv 
 
 The primary input file containing tweet-level data with sentiment and cognitive distortion scores pre-computed by the Aigents platform.
 
 | Column | Type | Description |
 |--------|------|-------------|
-| `time` | date | Tweet date (any common format: YYYY-MM-DD, DD/MM/YYYY, etc.) |
-| `permalink` | string | Tweet URL (used to extract `source_user` via regex) |
-| `text` | string | Tweet text (used to extract retweet targets and mentions) |
+| `permalink` | string | Tweet URL (e.g., `https://twitter.com/user/status/123`) — used to extract `source_user` |
+| `time` | datetime | Tweet timestamp (e.g., `2021-06-01 03:49:58+00:00`) |
+| `text` | string | Tweet text (used to extract retweet targets and mentions via regex) |
+| `sen` | float | Overall sentiment polarity, range [-1, +1] |
 | `pos` | float | Positive sentiment component, range [0, 1] |
 | `neg` | float | Negative sentiment component, range [-1, 0] |
-| `sen` | float | Overall sentiment polarity, range [-1, +1] (optional; derived from pos-|neg| if absent) |
-| `catastrophizing` | int (0/1) | Binary cognitive distortion indicator |
-| `dichotoreasoning` | int (0/1) | Binary cognitive distortion indicator |
-| `emotionreasoning` | int (0/1) | Binary cognitive distortion indicator |
-| `fortunetelling` | int (0/1) | Binary cognitive distortion indicator |
-| `labeling` | int (0/1) | Binary cognitive distortion indicator |
-| `magnification` | int (0/1) | Binary cognitive distortion indicator |
-| `mentalfiltering` | int (0/1) | Binary cognitive distortion indicator |
-| `mindreading` | int (0/1) | Binary cognitive distortion indicator |
-| `overgeneralizing` | int (0/1) | Binary cognitive distortion indicator |
-| `personalizing` | int (0/1) | Binary cognitive distortion indicator |
-| `shouldment` | int (0/1) | Binary cognitive distortion indicator |
-| `negativereasoning` | int (0/1) | Binary cognitive distortion indicator |
-| `mentalfilteringplus` | int (0/1) | Binary cognitive distortion indicator |
-| `disqualpositive` | int (0/1) | Binary cognitive distortion indicator |
+| `con` | float | Non-conformity score (pre-computed as √(pos × \|neg\|)); recomputed by pipeline |
+| `wordcnt` | int | Word count of tweet |
+| `itemcnt` | int | Item count |
+| `catastrophizing` | float | Cognitive distortion: catastrophizing, range [0 to 1] |
+| `dichotoreasoning` | float | Cognitive distortion: dichotomous reasoning, range [0 to 1] |
+| `disqualpositive` | float | Cognitive distortion: disqualifying positives, range [0 to 1] |
+| `emotionreasoning` | float | Cognitive distortion: emotional reasoning, range [0 to 1] |
+| `fortunetelling` | float | Cognitive distortion: fortune telling, range [0 to 1] |
+| `labeling` | float | Cognitive distortion: labelling, range [0 to 1] |
+| `magnification` | float | Cognitive distortion: magnification, range [0 to 1] |
+| `mentalfiltering` | float | Cognitive distortion: mental filtering, range [0 to 1] |
+| `mindreading` | float | Cognitive distortion: mind reading, range [0 to 1] |
+| `overgeneralizing` | float | Cognitive distortion: overgeneralising, range [0 to 1] |
+| `personalizing` | float | Cognitive distortion: personalising, range [0 to 1] |
+| `shouldment` | float | Cognitive distortion: should-statements, range [0 to 1] |
+| `exclusivereasoning` | float | Cognitive distortion: exclusive reasoning, range [0 to 1] |
+| `negativereasoning` | float | Cognitive distortion: negative reasoning, range [0 to 1] |
+| `mentalfilteringplus` | float | Cognitive distortion: mental filtering (variant), range [0 to 1] |
 
-**Privacy note:** The original Twitter data is not publicly distributed. A sample file (`twitter_sample.csv`) is provided with synthetic data to demonstrate the expected format and allow the pipeline to run. Contact the authors for access to the full dataset under appropriate data use agreements.
+**Privacy note:** The original Twitter data is not publicly distributed. A sample file (`twitter.csv`) is provided with sample data to demonstrate the expected format and allow the pipeline to run. Contact the authors for access to the full dataset under appropriate data use agreements.
 
 ### Price CSVs (required)
 
@@ -122,6 +126,9 @@ The primary input file containing tweet-level data with sentiment and cognitive 
 | Column | Type | Description |
 |--------|------|-------------|
 | `time` | date | Trading date |
+| `open` | float | Opening price (USD) |
+| `high` | float | Highest price (USD) |
+| `low` | float | Lowest price (USD) |
 | `close` | float | Closing price (USD) |
 
 **crypto_research_data.csv** — Long-format price data for additional assets (SOL, LTC, XRP, DOGE):
@@ -129,8 +136,12 @@ The primary input file containing tweet-level data with sentiment and cognitive 
 | Column | Type | Description |
 |--------|------|-------------|
 | `time` | date | Trading date |
-| `symbol` | string | Asset ticker (e.g., "SOL", "LTC") |
+| `open` | float | Opening price (USD) |
+| `high` | float | Highest price (USD) |
+| `low` | float | Lowest price (USD) |
 | `close` | float | Closing price (USD) |
+| `volume` | int | Total traded volome (USD), not used in analysis |
+| `symbol` | string | Asset ticker (e.g., "SOL", "LTC") |
 
 ### On-chain data (optional)
 
@@ -139,7 +150,11 @@ The primary input file containing tweet-level data with sentiment and cognitive 
 | Column | Type | Description |
 |--------|------|-------------|
 | `time` | date | Date |
+| `btc/eth_price` | float | Btc/Eth price (USD) |
+| `daily_active_addresses` | int | Daily active whale addresses |
+| `whale_vol_btc/eth` | float | Daily whale transaction volume (BTC/ETH) |
 | `whale_vol_usd` | float | Daily whale transaction volume (USD) |
+| `whale_tx_count` | int | Daily whale transaction count) |
 
 If on-chain files are not present, Phase 11 (SVAR whale transmission) is automatically skipped.
 
