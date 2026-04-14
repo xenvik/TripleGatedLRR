@@ -1,0 +1,24 @@
+## LRR Pipeline - Python Dependencies
+## Liquid Reputation and Rationality Framework
+## Tested with Python 3.10+
+
+# Core scientific computing
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Statistical modelling
+statsmodels>=0.14.0
+hmmlearn>=0.3.0
+
+# Network analysis
+networkx>=3.1
+
+# Visualisation
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Optional: FinBERT baseline (only needed for ablation variant 2)
+# Uncomment if running FinBERT comparison:
+# transformers>=4.30.0
+# torch>=2.0.0
