@@ -238,7 +238,7 @@ To reproduce the results reported in the paper:
 3. Run the sensitivity suite for robustness tables (S18, S19)
 4. Results will be written to `src/results/`
 
-The pipeline produces all figures and tables reported in the main paper and supplementary material. Expected runtime: ~15–30 minutes on a standard machine (depends on dataset size).
+The pipeline produces all figures and tables reported in the main paper and supplementary material. Expected runtime: ~120–180 minutes on a standard machine (depends on dataset size, full dataset estimation).
 
 ---
 
@@ -253,7 +253,7 @@ If you use this framework in your research, please cite:
              Information Framework for Regime-Contingent Cognitive 
              Dynamics and Risk Characterisation in Cryptocurrency Markets},
   journal = {SN Computer Science},
-  year    = {2025},
+  year    = {2026},
   note    = {Under review}
 }
 ```
@@ -268,4 +268,4 @@ This project is open-source. See LICENSE file for details.
 
 ## Acknowledgements
 
-We thank the Aigents development team for providing the sentiment and cognitive distortion detection infrastructure. This work was supported in part by SingularityNET Foundation.
+We thank the Novosibirsk State University for providing the sentiment and cognitive distortion detection infrastructure.
