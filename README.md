@@ -92,7 +92,7 @@ The primary input file containing tweet-level data with sentiment and cognitive 
 
 | Column | Type | Description |
 |--------|------|-------------|
-| `permalink` | string | Tweet URL (e.g., `https://twitter.com/user/status/123`) — used to extract `source_user` |
+| `permalink` | string | Tweet URL (e.g., `https://twitter.com/user/status/123`) — used to extract `source_user (main, retweet and mentions)` |
 | `time` | datetime | Tweet timestamp (e.g., `2021-06-01 03:49:58+00:00`) |
 | `text` | string | Tweet text (used to extract retweet targets and mentions via regex) |
 | `sen` | float | Overall sentiment polarity, range [-1, +1] |
