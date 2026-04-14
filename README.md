@@ -3,7 +3,7 @@
 **A Triple-Gated Social Information Framework for Regime-Contingent Cognitive Dynamics and Risk Characterisation in Cryptocurrency Markets**
 
 Authors: Abhishek Saxena, Anton Kolonin  
-Affiliation: Novosibirsk State University / SingularityNET Foundation  
+Affiliation: Novosibirsk State University 
 Paper: Submitted to SN Computer Science (Springer), Special Issue: AI for Intelligent, Secure and Trustworthy Systems
 
 ---
@@ -86,7 +86,7 @@ pip install -r requirements.txt
 
 ## Data Format
 
-### twitter.csv (required)
+### twitter.csv (required, have added a sample dataset here. Contact second author Anton Kolonin for full dataset due to privacy concern)
 
 The primary input file containing tweet-level data with sentiment and cognitive distortion scores pre-computed by the Aigents platform.
 
